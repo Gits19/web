@@ -74,8 +74,7 @@
       "src": "/assets/img/logo.png",
       "type": "image/png",
       "sizes": "16x16"
-    }
-    
+    },
     {
       "src": "path/to/maskable_icon_192.png",
       "sizes": "192x192",
