@@ -58,8 +58,21 @@
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
-    --bs-body-bg: #fff
+    --bs-body-bg: #fff;
+    --gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #0059ff 100%);
+    --gradient2:linear-gradient(65deg, #25084b , #00fbff  , #4158D0 0%, #C850C0 , #FFCC70 );
 }
+
+@keyframes gradient-animation {
+    
+    0% {
+        background-position: left;
+    }
+
+    100% { background-position: right;
+    }
+
+ }
 
 *,
 *::before,
@@ -74,16 +87,19 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    background-color: #4158D0;
+    background-image: var( --gradient );
+    background-size: 200%;
+    animation: gradient-animation 20s infinite alternate;
+    -webkit-text-size-adjust: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-animation: gradient-animation 20s infinite alternate;
 }
 
 hr {
@@ -113,8 +129,20 @@ h1,
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
+    background-image: var( --gradient2 ) ;
+    font-family: 'true lies';
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(3px 3px 3px #25084b );
+    background-size: 250%;
+    -webkit-filter: drop-shadow(3px 3px 3px #25084b );
+        transform="matrix(0.88, 0, 0, 1, 39.96, 197.78):;
+    -webkit-animation: gradient-animation 25s infinite alternate;
 }
+
+
 
 h1,
 .h1 {
@@ -333,7 +361,12 @@ figure {
 
 img,
 svg {
-    vertical-align: middle
+    vertical-align: middle;
+    background-image: var(--gradient);
+    background-clip:text;
+    -webkit-background-clip: text;
+    animation: transparent;
+    animation: gradient-animation 25s infinite alternate;
 }
 
 table {
