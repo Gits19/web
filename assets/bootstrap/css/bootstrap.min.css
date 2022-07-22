@@ -59,7 +59,7 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
-    --gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #0059ff 100%);
+    --gradient: linear-gradient(43deg, #00DBDE 0%, #FC00FF 100%);
     --gradient2:linear-gradient(65deg, #25084b , #00fbff  , #4158D0 0%, #C850C0 , #FFCC70 );
 }
 
