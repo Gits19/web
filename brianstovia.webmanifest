@@ -4,8 +4,6 @@
     "lang": "en",
     "description": "Welcome To Brian Stovia Official Site",
     "start_url": "https://brianstovia.space",
-    "background_color": "#25084b",
-    "theme_color": "#25084b",
     "dir": "auto",
     "display": "fullscreen",
     "orientation": "natural",
@@ -76,13 +74,13 @@
       "sizes": "16x16"
     },
     {
-      "src": "path/to/maskable_icon_192.png",
+      "src": "/assets/img/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "path/to/maskable_icon_512.png",
+      "src": "/assets/img/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
